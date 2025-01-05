@@ -3,12 +3,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #121212; /* Dark background */
-    color: #f0f0f0; /* Light text */
+    background-color: #121212; 
+    color: #f0f0f0; 
     scroll-behavior: smooth;
 }
 html {
-    scroll-padding-top: 50px; /* Adjust this value to the height of your nav bar */
+    scroll-padding-top: 50px; 
 }
 
 /* Navigation Bar */
@@ -30,10 +30,8 @@ nav a {
     transition: color 0.3s ease;
 }
 nav a:hover {
-    color: #1e90ff; /* Light blue on hover */
+    color: #ff69b4; /* Bright pink color */
 }
-
-
 
 /* Header Section */
 header {
@@ -67,7 +65,7 @@ header .social-icons img {
     margin: 0 10px; 
 }
 header .social-icons a:hover {
-    color: #1e90ff;
+    color: #ff69b4; /* Bright pink color */
 }
 
 /* Style for buttons container */
@@ -86,7 +84,7 @@ header .social-icons a:hover {
     transition: background-color 0.3s ease;
 }
 .btn:hover {
-    background-color: #1e90ff; /* Light blue on hover */
+    background-color: #ff69b4; /* Bright pink color */
 }
 
 /* Section Styles */
@@ -113,7 +111,7 @@ section h2 {
 /* Skills and Tools Container */
 .skills-tools-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
@@ -122,10 +120,10 @@ section h2 {
 /* Overall Container for Skills and Tools */
 .skills-tools-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 45px;
     padding: 5px;
-    max-width: 100%;  /* Ensure no content exceeds the width */
+    max-width: 100%;  
     margin: 0 auto;
 }
 
@@ -145,7 +143,7 @@ section h2 {
 /* Grid Layout Inside Skills and Tools */
 .skills-grid, .tools-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Flexible number of items per row */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
     gap: 30px;
     max-width: 100%;
     margin: 0 auto;
@@ -174,12 +172,12 @@ section h2 {
 /* Responsive Layout for Mobile Devices */
 @media (max-width: 768px) {
     .skills-tools-container {
-        grid-template-columns: 1fr; /* Stack into one column on mobile */
+        grid-template-columns: 1fr; 
         padding: 10px;
     }
 
     .skills-grid, .tools-grid {
-        grid-template-columns: 1fr; /* One item per row on mobile */
+        grid-template-columns: 1fr; 
     }
 
     .skill, .tool {
@@ -241,7 +239,7 @@ section h2 {
 }
 .project a {
     font-size: 1rem;
-    color: #1e90ff;
+    color: #ff69b4; /* Bright pink color */
     text-decoration: none;
     font-weight: bold;
 }
@@ -253,7 +251,7 @@ section h2 {
 /* Media Query for Smaller Screens (1 column on smaller screens) */
 @media (max-width: 768px) {
     .project-grid {
-        grid-template-columns: 1fr;  /* Single column on smaller screens */
+        grid-template-columns: 1fr;  
     }
 }
 
@@ -261,7 +259,7 @@ section h2 {
 #achievements {
     padding: 60px 20px;
     text-align: center;
-    background-color: #1e1e1e; /* Match the dark theme */
+    background-color: #1e1e1e; 
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
@@ -274,14 +272,14 @@ section h2 {
 
 .achievement-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible layout for achievements */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .achievement {
-    background: #121212; /* Card background */
+    background: #121212; 
     padding: 20px;
     border-radius: 8px;
     text-align: left;
@@ -308,7 +306,7 @@ section h2 {
 
 .achievement a {
     font-size: 1rem;
-    color: #1e90ff;
+    color: #ff69b4; /* Bright pink color */
     text-decoration: none;
     font-weight: bold;
 }
@@ -320,10 +318,9 @@ section h2 {
 /* Responsive Styling for Smaller Screens */
 @media (max-width: 768px) {
     .achievement-grid {
-        grid-template-columns: 1fr; /* Single column for smaller screens */
+        grid-template-columns: 1fr; 
     }
 }
-
 
 /* Contact Section */
 form {
@@ -332,58 +329,159 @@ form {
     display: flex;
     flex-direction: column;
 }
+
 form input, form textarea {
     padding: 15px;
     margin: 10px 0;
-    font-size: 1rem;
+    background-color: #333;
     border: none;
+    color: #fff;
     border-radius: 5px;
-    background-color: #1e1e1e;
-    color: #f0f0f0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
 }
+
+form input[type="submit"] {
+    background-color: #ff69b4; /* Bright pink background */
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e60073; /* Slightly darker pink on hover */
+}
+
+/* Form Input Focus */
+form input:focus, form textarea:focus {
+    outline: none;
+    border: 2px solid #ff69b4; /* Pink border on focus */
+}
+/* Contact Section - Send Message Button */
 form button {
     padding: 15px;
     font-size: 1.2rem;
-    color: #121212;
-    background-color: #1e90ff;
+    color: #fff;
+    background-color: #ff69b4; /* Bright pink background */
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-form button:hover {
-    background-color: #1c75c4;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
 }
 
-/* Footer Section */
+form button:hover {
+    background-color: #e60073; /* Darker pink on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+form button:active {
+    transform: scale(1); /* Return to original size when clicked */
+}
+
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 30px;
-    background-color: #1e1e1e;
-    color: #999;
-    font-size: 1rem;
+    padding: 20px;
+    background-color: #121212;
+    color: #ccc;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-/* Media Queries */
+footer a {
+    color: #ff69b4;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* General Section Animations */
+section {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+/* Header Section */
+header {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+/* About Me Section */
+#about {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+/* Skills Section */
+#skills {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+/* Projects Section */
+#projects {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+/* Achievements Section */
+#achievements {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+/* Contact Section */
+#contact {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+/* Responsive Animation for Smaller Screens */
 @media (max-width: 768px) {
-    nav a {
-        font-size: 1rem;
-        margin: 0 10px;
+    section {
+        animation: fadeIn 1s forwards;
     }
-    header h1 {
-        font-size: 2.5rem;
-    }
-    section h2 {
-        font-size: 2rem;
-    }
-    .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-    .project h3 {
-        font-size: 1.8rem;
-    }
-    .project p {
-        font-size: 1rem;
-    }
+}
+
+/* Apply the animation when the section is in view */
+section.in-view {
+    animation: fadeIn 1s forwards;
+}
+
+header.in-view {
+    animation: fadeIn 1s forwards;
+}
+
+#about.in-view {
+    animation: fadeIn 1s forwards;
+}
+
+#skills.in-view {
+    animation: fadeIn 1s forwards;
+}
+
+#projects.in-view {
+    animation: fadeIn 1s forwards;
+}
+
+#achievements.in-view {
+    animation: fadeIn 1s forwards;
+}
+
+#contact.in-view {
+    animation: fadeIn 1s forwards;
 }
